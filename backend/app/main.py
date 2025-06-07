@@ -55,7 +55,9 @@ class CloneRequest(BaseModel):
 async def health_check():
     return {"status": "healthy"}
 
-
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the Orchids Website Cloner API! Use /clone to clone a website."}
 
 # Core /clone endpoint
 @app.post("/clone")
