@@ -38,7 +38,7 @@ export default function HomePage() {
       setHtml(null);
 
       try {
-        const { data } = await axios.post("http://localhost:8000/clone", { url });
+        const { data } = await axios.post("https://echo-design-backend.vercel.app/clone", { url });
         setHtml(data.html);
         toast.success("Website cloned successfully!");
       } catch (err) {
