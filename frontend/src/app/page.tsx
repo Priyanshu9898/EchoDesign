@@ -2,9 +2,11 @@
 
 import * as React from "react"
 
-import { useTheme } from "next-themes"
+
 
 import HeroSection from "@/components/HeroSection"
+import Testimonials from "@/components/Testimonials"
+import FeatureSection from "@/components/FeatureSection"
 
 const Home = () => {
 
@@ -12,8 +14,9 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      {/* <FeatureSection />
+      <FeatureSection />
       <Testimonials />
+      {/* <FeatureSection />
       <Footer /> */}
     </>
   )
