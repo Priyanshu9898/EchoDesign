@@ -222,7 +222,7 @@ cd EchoDesign
 2. **Install** dependencies:
 
    ```bash
-   pip install -r app/requirements.txt
+   pip install -r requirements.txt
    ```
 3. **Copy** `app/.env.example` → `app/.env` and fill your API keys.
 4. **Run** locally:
