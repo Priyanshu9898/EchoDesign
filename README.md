@@ -1,5 +1,8 @@
 # EchoDesign
 
+### Deployed Frontend URL: https://echo-design-rust.vercel.app/
+### Deployed Backend URL: https://echo-design-backend.vercel.app/
+
 [![Stars](https://img.shields.io/github/stars/Priyanshu9898/EchoDesign?style=social)](https://github.com/Priyanshu9898/EchoDesign/stargazers)  
 [![Forks](https://img.shields.io/github/forks/Priyanshu9898/EchoDesign?style=social)](https://github.com/Priyanshu9898/EchoDesign/network/members)  
 [![License](https://img.shields.io/github/license/Priyanshu9898/EchoDesign)](https://github.com/Priyanshu9898/EchoDesign/blob/main/LICENSE)  
