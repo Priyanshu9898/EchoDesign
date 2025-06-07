@@ -48,7 +48,7 @@ The goal is to reproduce the look and feel of the source site as closely as poss
     - [Backend Setup (FastAPI)](#backend-setup-fastapi)
     - [Frontend Setup (Next.js + TypeScript)](#frontend-setup-nextjs--typescript)
     - [Launch Locally](#launch-locally)
-  - [�️ Usage](#️-usage)
+  - [🛠️ Usage](#️-usage)
   - [🤝 Contributing](#-contributing)
   - [📄 License](#-license)
 
@@ -142,7 +142,7 @@ Users simply paste any public URL and get an instant, inline‑CSS HTML replica 
     - [Backend Setup (FastAPI)](#backend-setup-fastapi)
     - [Frontend Setup (Next.js + TypeScript)](#frontend-setup-nextjs--typescript)
     - [Launch Locally](#launch-locally)
-  - [�️ Usage](#️-usage)
+  - [🛠️ Usage](#️-usage)
   - [🤝 Contributing](#-contributing)
   - [📄 License](#-license)
 
@@ -229,7 +229,7 @@ cd EchoDesign
 
    ```bash
    cd app
-   uvicorn main:app --reload
+   uvicorn main:app --reload --port 8000
    ```
 
 ### Frontend Setup (Next.js + TypeScript)
