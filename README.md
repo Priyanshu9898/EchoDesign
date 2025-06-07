@@ -27,19 +27,30 @@ The goal is to reproduce the look and feel of the source site as closely as poss
 
 ## 📋 Table of Contents
 
-1. [Badges & Tech Stack](#-badges--tech-stack)  
-2. [Features](#-features)  
-3. [Prerequisites](#-prerequisites)  
-4. [Getting Started](#-getting-started)  
-   - [1. Clone the Repository](#1-clone-the-repository)  
-   - [2. Backend Setup (FastAPI)](#2-backend-setup-fastapi)  
-   - [3. Frontend Setup (Next.js + TypeScript)](#3-frontend-setup-nextjs--typescript)  
-   - [4. Environment Variables](#4-environment-variables)  
-   - [5. Launching Locally](#5-launching-locally)  
-5. [Project Structure](#-project-structure)  
-6. [Usage](#-usage)  
-7. [Contributing](#-contributing)  
-8. [License](#-license)
+- [EchoDesign](#echodesign)
+    - [Deployed Frontend URL: https://echo-design-rust.vercel.app/](#deployed-frontend-url-httpsecho-design-rustvercelapp)
+    - [Deployed Backend URL: https://echo-design-backend.vercel.app/](#deployed-backend-url-httpsecho-design-backendvercelapp)
+  - [🚀 Project Overview](#-project-overview)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🛠️ Badges \& Tech Stack](#️-badges--tech-stack)
+    - [Repo Statistics](#repo-statistics)
+    - [Core Technologies](#core-technologies)
+  - [✨ Features](#-features)
+  - [🚀 Project Overview](#-project-overview-1)
+  - [📋 Table of Contents](#-table-of-contents-1)
+  - [🛠️ Badges \& Tech Stack](#️-badges--tech-stack-1)
+    - [Repo Stats](#repo-stats)
+    - [Core Technologies](#core-technologies-1)
+  - [✨ Features](#-features-1)
+  - [📦 Prerequisites](#-prerequisites)
+  - [🏁 Getting Started](#-getting-started)
+    - [Clone the Repo](#clone-the-repo)
+    - [Backend Setup (FastAPI)](#backend-setup-fastapi)
+    - [Frontend Setup (Next.js + TypeScript)](#frontend-setup-nextjs--typescript)
+    - [Launch Locally](#launch-locally)
+  - [�️ Usage](#️-usage)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
 
 ---
 
@@ -75,8 +86,6 @@ The goal is to reproduce the look and feel of the source site as closely as poss
   - Preview the cloned HTML/CSS instantly in an `<iframe>`.
 
 - **Design Scraping**  
-  - Fetch raw HTML, CSS, and asset links via Python’s `requests` + `BeautifulSoup` (static sites).  
-  - *(Optional)* Use Playwright for headless browser rendering to capture dynamic/JS-heavy websites:  
     - Full DOM snapshot  
     - CSS rules & computed styles  
     - Screenshot for vision-capable LLMs  
@@ -93,23 +102,180 @@ The goal is to reproduce the look and feel of the source site as closely as poss
 
 ---
 
+
+
+
+## 🚀 Project Overview
+
+**EchoDesign** is an AI‑powered website cloning tool built with:
+
+1. **Hyperbrowser** (headless scraping) to capture HTML/CSS/links/screenshots
+2. **FastAPI** (Python) backend to orchestrate scraping + LLM calls
+3. **OpenAI** (or other LLM) to generate a standalone HTML/CSS clone
+4. **MongoDB** to store query history
+5. **Next.js + TypeScript** frontend to collect URLs, call the API, and preview results in an `<iframe>`
+
+Users simply paste any public URL and get an instant, inline‑CSS HTML replica rendered in their browser.
+
+---
+
+## 📋 Table of Contents
+
+- [EchoDesign](#echodesign)
+    - [Deployed Frontend URL: https://echo-design-rust.vercel.app/](#deployed-frontend-url-httpsecho-design-rustvercelapp)
+    - [Deployed Backend URL: https://echo-design-backend.vercel.app/](#deployed-backend-url-httpsecho-design-backendvercelapp)
+  - [🚀 Project Overview](#-project-overview)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🛠️ Badges \& Tech Stack](#️-badges--tech-stack)
+    - [Repo Statistics](#repo-statistics)
+    - [Core Technologies](#core-technologies)
+  - [✨ Features](#-features)
+  - [🚀 Project Overview](#-project-overview-1)
+  - [📋 Table of Contents](#-table-of-contents-1)
+  - [🛠️ Badges \& Tech Stack](#️-badges--tech-stack-1)
+    - [Repo Stats](#repo-stats)
+    - [Core Technologies](#core-technologies-1)
+  - [✨ Features](#-features-1)
+  - [📦 Prerequisites](#-prerequisites)
+  - [🏁 Getting Started](#-getting-started)
+    - [Clone the Repo](#clone-the-repo)
+    - [Backend Setup (FastAPI)](#backend-setup-fastapi)
+    - [Frontend Setup (Next.js + TypeScript)](#frontend-setup-nextjs--typescript)
+    - [Launch Locally](#launch-locally)
+  - [�️ Usage](#️-usage)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
+
+---
+
+## 🛠️ Badges & Tech Stack
+
+### Repo Stats
+
+* ⭐ [Stars](https://github.com/Priyanshu9898/EchoDesign/stargazers)
+* 🍴 [Forks](https://github.com/Priyanshu9898/EchoDesign/network/members)
+* ❗ [Open Issues](https://github.com/Priyanshu9898/EchoDesign/issues)
+* 🔀 [PRs](https://github.com/Priyanshu9898/EchoDesign/pulls)
+
+### Core Technologies
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat\&logo=next.js\&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=flat\&logo=react\&logoColor=61DAFB)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat\&logo=node.js\&logoColor=white)](https://nodejs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat\&logo=fastapi\&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)](https://www.python.org/)
+[![Hyperbrowser](https://img.shields.io/badge/Hyperbrowser-000000?style=flat\&logo=hyper)](https://hyperbrowser.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat\&logo=mongodb\&logoColor=white)](https://mongodb.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat\&logo=openai\&logoColor=white)](https://openai.com/)
+
+---
+
+## ✨ Features
+
+* **URL Input & Validation**
+  A rotating placeholder Next.js form with native URL validation.
+* **Headless Scraping**
+  Hyperbrowser captures HTML, CSS, links, and optional screenshots—even on JS‑heavy pages.
+* **AI‑Powered Cloning**
+  Structured prompt compiles scraped context and generates standalone HTML5 with inline CSS via an LLM.
+* **Preview & History**
+  Render result in an `<iframe>` for full‑width preview; queries saved in MongoDB for later review.
+* **CORS & Security**
+  FastAPI CORS middleware allows safe cross‑origin calls with configurable headers.
+* **Easy Deployment**
+  Frontend on Vercel, backend as Vercel Serverless Functions (FastAPI).
+
+---
+
 ## 📦 Prerequisites
 
-Before you begin, ensure you have the following installed on your system:
+* **Node.js** ≥ v14 & **npm**/**yarn**
+* **Python** ≥ 3.8 & **pip**
+* **MongoDB** (local or cloud)
+* **.env** variables for:
 
-- **Node.js** (v14.x or higher) & **npm** (or **Yarn**)  
-- **Python** (v3.8 or higher)  
-- **pip** (package manager for Python)  
-- *(Optional)* **Playwright CLI** if you plan to use headless browsing  
-- An **LLM API key** (OpenAI, Anthropic, Google Vertex, etc.)  
+  * `OPENAI_API_KEY`
+  * `HYPERBROWSER_API_KEY`
+  * `MONGO_URI`
 
 ---
 
 ## 🏁 Getting Started
 
-### 1. Clone the Repository
+### Clone the Repo
 
 ```bash
 git clone https://github.com/Priyanshu9898/EchoDesign.git
 cd EchoDesign
 ```
+
+### Backend Setup (FastAPI)
+
+1. **Create & activate** Python venv:
+
+   ```bash
+   python -m venv env
+   source env/bin/activate   # macOS/Linux
+   .\env\Scripts\activate   # Windows
+   ```
+2. **Install** dependencies:
+
+   ```bash
+   pip install -r app/requirements.txt
+   ```
+3. **Copy** `app/.env.example` → `app/.env` and fill your API keys.
+4. **Run** locally:
+
+   ```bash
+   cd app
+   uvicorn main:app --reload
+   ```
+
+### Frontend Setup (Next.js + TypeScript)
+
+1. **Install** packages:
+
+   ```bash
+   cd frontend
+   npm install --legacy-peer-deps
+   # or yarn
+   ```
+
+2. **Run** dev server:
+
+   ```bash
+   npm run dev
+   ```
+
+### Launch Locally
+
+* Backend: [http://localhost:8000](http://localhost:8000)
+* Frontend: [http://localhost:3000](http://localhost:3000)
+
+---
+
+
+
+## 🛠️ Usage
+
+1. Open the frontend in your browser.
+2. Paste any public website URL.
+3. Click “Clone” → preview appears instantly.
+4. Inspect or download the generated HTML/CSS.
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create a feature branch
+3. Submit a pull request
+
+Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) and review open issues before proposing new features.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
